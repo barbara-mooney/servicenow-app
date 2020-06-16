@@ -12,7 +12,6 @@ ul {
 }
 
 li {
-  /* font: 28px;  */
   font-family: Helvetica, Verdana, sans-serif;
   line-height: 1.5;
   border-bottom: 1px solid #ccc;
@@ -25,8 +24,8 @@ li:hover {
 .container {
   width: 80%;
   background-color:#F7F7F7;
-  margin-bottom: 30px;
-  padding: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
 }
 
 h2 {
@@ -36,7 +35,7 @@ h2 {
 }
 
 .incidentButton {
-  float: right
+  float: right;
 }
 
 .card-subtitle {
@@ -45,10 +44,10 @@ h2 {
 
 .jumbotron {
   margin-top: 10px;
+  padding: 30px;
   background-color: #83B6A2;
 }
 
 .card {
   background-color: #F7F7F7;
-
 }

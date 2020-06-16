@@ -49,32 +49,34 @@ export default class App extends Component {
     const { incidents, state } = this.state;
     const Incidents = () => {
       return (
-        <ul className='list-group'>
+        <section>
+          <ul className='list-group'>
           {incidents.map((i) => 
             (i.state !== 7) ? 
               <li className={ `list-group-item`} key={i.sys_id}>{i.number}: {i.short_description} 
-                <span className='incidentButton'><button className='btn btn-outline-dark' onClick={()=>this.viewIncident(i.sys_id)}>
+                <span className='incidentButton'><button className='btn btn-outline-dark' style={{fontWeight: 'bold'}} onClick={()=>this.viewIncident(i.sys_id)}>
                     View incident
                 </button></span>
               </li>
             : ''
           )}
         </ul>
+        </section>
       )
     }
 
     return (
       <div>
-        <div>
         <div className='container'>
-          <div className='jumbotron'>
-            <h1 className='display-4'><span><img style={{width: 150, marginRight: 35 }} alt='servicenow logo' src={ logo } />My open incidents</span></h1>
+          <div className='jumbotron' >
+            <h1 className='display-4'>My open incidents</h1>
+            <img style={{width: 110, textAlign: 'center', marginTop: 20 }} alt='servicenow logo' src={ logo } />
           </div>
           { this.state.view_incident === true ?
-            <div className='card'>
+            <section className='card'>
               <div className='card-body'>
                 <h5 className='card-title'>Incident: {this.state.short_description}</h5>
-                <p className='card-subtitle'>Number: {this.state.number}</p>
+                <p className='card-subtitle' style={{marginBottom: 5}}>Number: {this.state.number}</p>
                 {(state === '1' ? <p className='card-text'>State: New</p> : 
                     (state === '2' ? <p className='card-text'>State: Assigned - Ticket has someone assigned to it and it is being worked.</p> : 
                       (state === '12' ? <p className='card-text'>State: Referred - Ticket has been assgiend to a group but not an individual yet.</p> : 
@@ -91,9 +93,9 @@ export default class App extends Component {
                 <p className='card-text'>Category: {this.state.category}</p>
                 <p className='card-text'>Description: {this.state.description}</p>
                 <p></p>
-                <button className='btn btn-outline-dark' onClick={() => this.viewList()}>Go back to list</button>
+                <button className='btn btn-outline-dark' style={{marginTop: 15, fontWeight: 'bold'}} onClick={() => this.viewList()}>Go back to list</button>
               </div>
-            </div>
+            </section>
             : <div></div>
           }
           {
@@ -101,7 +103,6 @@ export default class App extends Component {
               <Incidents />
             : ''
           }
-        </div>
         </div>
       </div>
     )
