@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This app allows the user to connect to their ServiceNow instance and access their incidents.
+This app allows the user to access their ServiceNow open incidents.
 
 A) How to set up your development environment
 
