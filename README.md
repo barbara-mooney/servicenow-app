@@ -1,12 +1,10 @@
-# React boilerplate for ServiceNow apps
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Simple and lightweight boilerplate to build React applications for ServiceNow. 
+This app allows the user to connect to their ServiceNow instance and access their incidents.
 
-Based on [Create-React-App](https://github.com/facebook/create-react-app).
+A) How to set up your development environment
 
-## How to set up your development environment
-
-You need to complete 3 steps so you can start bulding a React applicaiton for ServiceNow:
+You need to complete the following 3 steps so you can start bulding a React applicaiton for ServiceNow:
 
 1. Copy this repo to your local machine and run `npm install` to install all dependencies.
 2. Update `package.json` (line #5) with your ServiceNow instance URL:
@@ -21,14 +19,15 @@ You need to complete 3 steps so you can start bulding a React applicaiton for Se
 
 This completes development environment setup and you can run the application by `npm start`.
 
-> User name and password required for development environment only. You don't need to provide credentials when deploying the app into ServiceNow.
+> The ServiceNow Username and password are required for development environment only. You don't need to provide credentials when deploying the app into ServiceNow. The app is configured to obtain a token from ServiceNow once it's deployed. 
 
-## ServiceNow deployment
+B) ServiceNow deployment
 To deploy the application into ServiceNow you need to perform the following steps:
 1. Build the application by executing `npm run build`.
 2. Save JS and CSS files from Build folder as _Style Sheets_ in ServiceNow.
 3. Save HTML file from Build folder as a UI page. Update references to JS/CSS correspondingly.
 
-You can find more details in [this article](https://medium.com/@pishchulin/react-application-in-servicenow-8bdbb1e69c0c).
-
-
+These are helpful resources for getting started with building and deploying applications to service now:
+1. https://medium.com/@pishchulin/react-applications-in-servicenow-service-portal-36d774892410
+2. https://medium.com/@pishchulin/react-application-in-servicenow-8bdbb1e69c0c
+3. https://medium.com/@pishchulin/react-in-servicenow-how-to-access-the-data-a8cc4fae3912 

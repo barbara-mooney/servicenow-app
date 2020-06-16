@@ -1,3 +1,10 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #2A3E40;
+  margin-top: 10px
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -5,23 +12,43 @@ ul {
 }
 
 li {
-  font: 200 20px/2 Helvetica, Verdana, sans-serif;
+  /* font: 28px;  */
+  font-family: Helvetica, Verdana, sans-serif;
+  line-height: 1.5;
   border-bottom: 1px solid #ccc;
 }
 
-li:last-child {
-  border: none;
+li:hover {
+  background: #F7F7F7;
 }
 
-li:hover {
-  background: #f6f6f6;
-}
-div {
-  width:700px;
+.container {
+  width: 80%;
+  background-color:#F7F7F7;
+  margin-bottom: 30px;
+  padding: 20px;
 }
 
 h2 {
   font: 400 40px/1.5 Helvetica, Verdana, sans-serif;
   margin: 0;
   padding: 0;
+}
+
+.incidentButton {
+  float: right
+}
+
+.card-subtitle {
+  font-size: 18px
+}
+
+.jumbotron {
+  margin-top: 10px;
+  background-color: #83B6A2;
+}
+
+.card {
+  background-color: #F7F7F7;
+
 }
