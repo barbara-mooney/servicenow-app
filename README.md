@@ -31,3 +31,4 @@ These are helpful resources for getting started with building and deploying appl
 1. https://medium.com/@pishchulin/react-applications-in-servicenow-service-portal-36d774892410
 2. https://medium.com/@pishchulin/react-application-in-servicenow-8bdbb1e69c0c
 3. https://medium.com/@pishchulin/react-in-servicenow-how-to-access-the-data-a8cc4fae3912 
+**If you don't have access to the Content Management System in your instance, you can access style sheets through studio. 
